@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div>
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
-    </div>
-  </div>
+  <NuxtLayout :name="layout">
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<script lang="ts" setup>
+const layout = "another";
+</script>
