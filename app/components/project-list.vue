@@ -7,7 +7,7 @@
     <section v-else>
       <ul class="grid grid-cols-1 gap-4">
         <li
-          v-for="repo in data"
+          v-for="repo in repos"
           :key="repo.id"
           class="border border-gray-200 rounded-sm p-4 hover:bg-gray-200 font-mono"
         >
@@ -32,4 +32,10 @@ interface GitHubRepo {
 const githubURL = "https://api.github.com/users/Alzubair98/repos";
 
 const { error, pending, data } = await useFetch<GitHubRepo[]>(githubURL);
+
+const repos = computed(() =>
+  data.value
+    ?.filter((repo) => repo.description)
+    .sort((a, b) => b.stargazers_count - a.stargazers_count)
+);
 </script>
