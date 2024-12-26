@@ -26,7 +26,15 @@
 
 <script setup lang="ts">
 interface GitHubRepo {
-  [key: string]: any; // Include additional properties if needed
+  id: number;
+  name: string;
+  full_name: string;
+  html_url: string;
+  description: string | null;
+  language: string | null;
+  forks_count: number;
+  stargazers_count: number;
+  [key: string]: any; // To include additional unknown fields
 }
 
 const githubURL = "https://api.github.com/users/Alzubair98/repos";
