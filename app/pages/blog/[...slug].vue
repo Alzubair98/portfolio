@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <div>We are inside a blog</div>
-    <div>Post id is {{ route.params.slug }}</div>
-  </div>
+  <article>
+    <ContentDoc />
+  </article>
 </template>
 
 <script lang="ts" setup>
