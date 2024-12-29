@@ -7,5 +7,5 @@
 
 <script lang="ts" setup>
 const route = useRoute();
-console.log(route);
+console.log(route.params.slug);
 </script>
