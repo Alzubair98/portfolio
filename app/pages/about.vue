@@ -1,9 +1,5 @@
 <template>
-  <div>This page is about me</div>
+  <article>
+    <ContentDoc path="/about" />
+  </article>
 </template>
-
-<script setup lang="ts">
-useHead({
-  titleTemplate: "%s About",
-});
-</script>
