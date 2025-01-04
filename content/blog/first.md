@@ -1,3 +1,20 @@
+---
+title: "first blog"
+description: "first blog description"
+head:
+  meta:
+    - name: "keywords"
+      content: "nuxt, vue, content"
+    - name: "robots"
+      content: "index, follow"
+    - name: "author"
+      content: "NuxtLabs"
+    - name: "copyright"
+      content: "© 2022 NuxtLabs"
+    - name: "og:title"
+      content: "this is an openGraph title"
+---
+
 # First post on our website
 
 ## Introduction
@@ -28,7 +45,7 @@ Todo list:
 Tables:
 | Name | Surname |
 |--|--|
-| Piotr | Jura |
+| Alzubair | Alqaraghuli |
 
 ```html
 <html>
